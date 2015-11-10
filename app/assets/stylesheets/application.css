@@ -1,0 +1,196 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ h2 {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-weight: lighter;
+
+}
+
+.divider {
+
+	max-width: 200px;
+
+}
+
+
+.headerbutton {
+
+	display: block;
+	text-align: center;
+	border: 1px black solid;
+	font-family: 'Quicksand', sans-serif;
+	max-width: 100px;
+	margin: 10px auto;
+
+
+}
+
+footer {
+
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	font-size: 8px;
+
+
+}
+
+.button {
+
+	display: block;
+	text-align: center;
+	border: 2px black solid;
+	font-family: 'Quicksand', sans-serif;
+	padding: 5px;
+	max-width: 200px;
+	margin: 10px auto;
+}
+
+p {
+	display: block;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	padding: 5px;
+	max-width: 200px;
+	margin: 10px auto;
+}
+
+.button:hover {
+	color: white;
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+	color: #383838;
+}
+
+.button:hover > a {
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+
+}
+
+#bold {
+		color: white;
+		background-color: black;
+
+}
+
+.content {
+
+	width: 60%;
+	margin: 0px auto;
+}
+
+header form {
+	display: inline-block;
+}
+
+footer {
+
+	text-align: center;
+
+
+}
+
+header {
+	text-align: center;
+
+}
+
+.searchbar {
+
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10px;
+}
+
+#search {
+
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10px;
+}
+
+
+.searchbar > label {
+
+	text-align: center;
+
+
+}
+
+
+input[type=submit] {
+
+	display: block;
+	text-align: center;
+	border: 2px black solid;
+	font-family: 'Quicksand', sans-serif;
+	padding: 5px;
+	max-width: 200px;
+	margin: 10px auto;
+}
+
+.delete{
+
+	float: none;
+
+
+}
+
+input[type=submit]:hover {
+
+	background-color: black;
+	color: white;
+
+}
+
+
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.label, .input {
+    display: inline-block;
+}
+
+.label {
+    width: 30%;
+    text-align: right;
+}
+
+.label + .input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+
+.input + .input {
+    float: right;
+}
+
+
+
+
+

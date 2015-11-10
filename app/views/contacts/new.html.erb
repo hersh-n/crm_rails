@@ -1,0 +1,64 @@
+<h2>Create new Contact</h2>
+
+<%= form_for @contacts do |form_builder| %>
+
+	<p>
+    <%= form_builder.label :first_name %>
+    <%= form_builder.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= form_builder.label :last_name %>
+    <%= form_builder.text_field :last_name %>
+  </p>
+
+  <p>
+    <%= form_builder.label :email %>
+    <%= form_builder.text_field :email %>
+  </p>
+
+  <p>
+    <%= form_builder.label :note %>
+    <%= form_builder.text_field :note %>
+  </p>
+
+  <p>
+    <%= form_builder.label :phone_number %>
+    <%= form_builder.number_field :phone_number %>
+  </p>
+
+  <%= form_builder.submit %>
+  <% end %>
+
+
+    <!-- <label class="label" class="edit" for="first">First Name</label>
+  	<input class="input" type="text" name="first_name" id="first"placeholder="e.g John"> -->
+
+
+
+<!-- 	<p>
+  	<label class="label" class="edit" for="last">Last Name</label>
+  	<input class="input" type="text" name="last_name" id="last"placeholder="e.g Smith">
+	</p>
+
+	<p>
+  	<label class="label" class="edit" for="email">Email</label>
+  	<input class="input" type="text" name="email" id="email">
+	</p>
+
+	<p>
+  <label class="label" class="edit" for="note">Notes</label>
+  <input class="input" type="text" name="note" id="note">
+  </p>
+
+
+	<p>
+  <label class="label" class="edit" for="phone">Phone</label>
+  <input class="input" type="number" name="phone_number" id="phone">
+  </p>
+
+  <input class="delete" class="input" type="submit" name="Submit">
+
+
+
+</form> -->
