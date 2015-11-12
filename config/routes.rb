@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   root 'homes#show'
   resources :contacts
+  resources :users, only: [:new, :create, :show]
 
 
 

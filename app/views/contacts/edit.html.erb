@@ -1,7 +1,40 @@
-<h2>Edit a Contact</h2>
+<h2>Edit Contact</h2>
 
 
-<form class="searchbar" class="form" action="/contacts/<%= @contact.id %>" method="post">
+<%= form_for @contact do |form_builder| %>
+
+  <p>
+    <%= form_builder.label :first_name, :class => "label" %>
+    <%= form_builder.text_field :first_name, :class => "input" %>
+  </p>
+
+  <p>
+    <%= form_builder.label :last_name, :class => "label" %>
+    <%= form_builder.text_field :last_name, :class => "input" %>
+  </p>
+
+  <p>
+    <%= form_builder.label :email, :class => "label" %>
+    <%= form_builder.text_field :email, :class => "input" %>
+  </p>
+
+  <p>
+    <%= form_builder.label :note, :class => "label" %>
+    <%= form_builder.text_field :note, :class => "input" %>
+  </p>
+
+  <p>
+    <%= form_builder.label :phone_number, :class => "label" %>
+    <%= form_builder.number_field :phone_number, :class => "input" %>
+  </p>
+
+  <%= form_builder.submit %>
+  <% end %>
+
+
+
+
+<!-- <form class="searchbar" class="form" action="/contacts/<%= @contact.id %>" method="post">
   <input class="input" type="hidden" name="_method" value="put">
 
 	<p>
@@ -30,4 +63,4 @@
   </p>
 
   <input class="input" type="submit" name="Submit">
-</form>
+</form> -->

@@ -11,7 +11,7 @@ class ContactsController < ApplicationController
   def destroy
     @contact = Contact.find(params[:id])
     @contact.destroy
-    redirect_to all_contacts
+    redirect_to contacts_path
   end
 
   def new
@@ -22,9 +22,24 @@ class ContactsController < ApplicationController
     @contacts = Contact.new(contact_params)
 
     if @contacts.save
-    	redirect_to action: :show
+    	redirect_to @contacts
     else
     	render :new
+    end
+
+  end
+
+  def edit
+  	@contact = Contact.find(params[:id])
+  end
+
+  def update
+  	@contact = Contact.find(params[:id])
+
+  	if @contact = @contact.update_attributes(contact_params)
+    	redirect_to action: :show
+    else
+    	render :edit
     end
 
   end
