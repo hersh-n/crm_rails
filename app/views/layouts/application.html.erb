@@ -10,7 +10,10 @@
 	<title>Document</title>
 </head>
 <body>
-	<header><a class="headerbutton" href="/">Home</a>
+	<header>
+		<% if current_user %>
+			<a class="headerbutton" href="/users/<%= current_user.id %>">Home</a>
+		<% end %>
 
 </header>
 	<div class="content">
