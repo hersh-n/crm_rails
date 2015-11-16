@@ -5,6 +5,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<%= stylesheet_link_tag "application.css" %>
+	<%= javascript_include_tag "application" %>
 
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -12,6 +13,7 @@
 <body>
 	<header>
 		<% if current_user %>
+			<%= link_to "Sign Out", session_path(current_user), method: :delete, class: "headerbutton" %>
 			<a class="headerbutton" href="/users/<%= current_user.id %>">Home</a>
 		<% end %>
 

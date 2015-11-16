@@ -14,10 +14,43 @@
  *= require_self
  */
 
+body {
+    background-image: url('cold_front.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+ h1 {
+
+ 	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 120px;
+	color: white;
+ }
+
+
+ .info {
+
+ 	font-size: 25px;
+ 	display: block;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	padding: 5px;
+	max-width: 400px;
+	margin: 10px auto;
+	color: white;
+
+
+
+ }
+
  h2 {
 	font-family: 'Quicksand', sans-serif;
 	text-align: center;
 	font-weight: lighter;
+	color: white;
 
 }
 
@@ -32,10 +65,11 @@
 
 	display: block;
 	text-align: center;
-	border: 1px black solid;
+	border: 1px white solid;
 	font-family: 'Quicksand', sans-serif;
 	max-width: 100px;
 	margin: 10px auto;
+	color: white;
 
 
 }
@@ -45,6 +79,7 @@ footer {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: lighter;
 	font-size: 8px;
+	color: white;
 
 
 }
@@ -53,11 +88,12 @@ footer {
 
 	display: block;
 	text-align: center;
-	border: 2px black solid;
+	border: 2px white solid;
 	font-family: 'Quicksand', sans-serif;
 	padding: 5px;
 	max-width: 200px;
 	margin: 10px auto;
+	color: white;
 }
 
 p {
@@ -67,11 +103,13 @@ p {
 	padding: 5px;
 	max-width: 200px;
 	margin: 10px auto;
+	color: white;
+
 }
 
 .button:hover {
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 }
 
 a {
@@ -80,7 +118,7 @@ a {
 }
 
 .button:hover > a {
-	color: white;
+	color: black;
 }
 
 ul {
@@ -122,6 +160,7 @@ header {
 	text-align: center;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 10px;
+	color: white;
 }
 
 #search {
@@ -129,6 +168,7 @@ header {
 	text-align: center;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 10px;
+	color: white;
 }
 
 
@@ -160,8 +200,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
 
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 
 }
 
