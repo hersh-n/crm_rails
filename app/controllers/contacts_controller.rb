@@ -1,11 +1,11 @@
 class ContactsController < ApplicationController
 
   def index
-  	@contacts = current_user.contacts
-  end
-
-  def search
-    @contacts = Contact.where("LOWER(first_name) LIKE LOWER(?)", "%#{params[:first_name]}%")
+  	if params[:first_name]
+      @contacts = current_user.contacts.where("LOWER(first_name) LIKE LOWER(?)", "%#{params[:first_name]}%")
+    else
+     @contacts = current_user.contacts
+    end
   end
 
   def show
