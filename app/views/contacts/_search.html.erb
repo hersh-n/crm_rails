@@ -1,7 +1,7 @@
 
 <%= form_tag contacts_path, method: :get, authentication: false, id:"search" do %>
 
-	<%= label_tag :first_name, "Contact Search" %>
-	<%= text_field_tag :first_name, params[:first_name], placeholder: "e.g John" %>
-	<%= submit_tag 'Submit' %>
+	<%= text_field_tag :first_name, params[:first_name],placeholder: "e.g John" %>
+	<%= submit_tag 'Search' %>
+
 <% end %>

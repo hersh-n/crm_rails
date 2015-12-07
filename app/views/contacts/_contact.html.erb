@@ -1,12 +1,5 @@
-<div class='contact_list'>
-<ul>
 
-<% @contacts.each do |contact| %>
   <li >
   	<a class="button" href="/contacts/<%= contact.id %>">
   	<%= contact.first_name %>  <%= contact.last_name %> </a>
   </li>
-<% end %>
-</ul>
-
-</div>

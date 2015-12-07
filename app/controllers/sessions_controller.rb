@@ -9,7 +9,7 @@ def create
 		session[:user_id] = user.id
 		redirect_to user_path(user)
 	else
-		flash[:alert] = "Username or Password is incorrect"
+		flash.now[:alert] = "Username or Password is incorrect"
 		render :new
 	end
 end

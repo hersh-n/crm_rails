@@ -36,6 +36,11 @@ body {
 
 }
 
+li {
+	list-style-type: none;
+}
+
+
  h1 {
 
  	font-family: 'Quicksand', sans-serif;

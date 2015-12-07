@@ -1,8 +1,8 @@
 $(document).on('ready page:load',function(){
 	$('#search').submit(function(event){
-		event.preventDefult();
-		var searchValue = $('#search').val();
+		event.preventDefault();
+		var searchValue = $('#first_name').val();
 
-		$.getScript('/contacts?search=' + searchValue)
+		$.getScript('/contacts?first_name=' + searchValue)
 		});
 	});

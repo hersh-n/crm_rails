@@ -1,8 +1,8 @@
 
 <div class="sign_in">
-<% if flash[:error] -%>
-  <%= flash[:error] %>
-<% end -%>
+<% if flash[:alert] %>
+	    <p id="alert"><%= flash[:alert] %></p>
+	<% end %>
 
 <%= form_tag sessions_path do %>
 
@@ -13,8 +13,8 @@
 
 
 <p>
-<%= label_tag :password %>
-<%= password_field_tag :password %>
+<%= label_tag :password, nil, class: "label" %>
+<%= password_field_tag :password, nil, class: "input" %>
 </p>
 
 <%= submit_tag "Sign In" %>

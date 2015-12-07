@@ -7,9 +7,6 @@ class ContactsController < ApplicationController
      @contacts = current_user.contacts
     end
 
-    if request.xhr?
-      render @contacts
-    end
     respond_to do |format|
       format.html
       format.js
