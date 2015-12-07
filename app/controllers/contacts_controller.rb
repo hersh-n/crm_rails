@@ -1,10 +1,11 @@
 class ContactsController < ApplicationController
 
   def index
-  	@contacts = current_user.contacts if params[:search]
-      Contact.where("LOWER(fullname) LIKE LOWER(?)", "%#{params[:search]}%")
-    else
-      Contact.all
+  	@contacts = current_user.contacts
+  end
+
+  def search
+    @contacts = Contact.where("LOWER(first_name) LIKE LOWER(?)", "%#{params[:first_name]}%")
   end
 
   def show
@@ -49,7 +50,7 @@ class ContactsController < ApplicationController
 
   private
   def contact_params
-  	params.require(:contact).permit(:first_name, :last_name, :email, :note, :phone_number, :fullname)
+  	params.require(:contact).permit(:first_name, :last_name, :email, :note, :phone_number)
   end
 
 end
