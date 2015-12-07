@@ -11,9 +11,12 @@
 <hr class="divider">
 <a class="button" href="/contacts/<%= @contact.id %>/edit">Edit Contact</a>
 
+<a class="bold" href="/contacts"><li class="button">Back to Contacts</li></a>
+
 
 
 <%= button_to "Delete", contact_path(@contact), {method: :delete} %>
+
 <!-- <form action="/contacts/<%= @contact.id %>" method="post">
   <input class="delete" type="hidden" name="_method" value="delete">
   <input class="delete" type="submit" name="Delete Contact" value ="DELETE">

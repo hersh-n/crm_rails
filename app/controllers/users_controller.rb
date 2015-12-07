@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 			redirect_to user_path(@user)
 		else
 			flash.now[:alert] = "Sign up Failed"
-			render :new
+			redirect_to new_user_path
 		end
 	end
 

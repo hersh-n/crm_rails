@@ -13,15 +13,17 @@
 <body>
 	<header>
 		<% if current_user %>
-			<%= link_to "Sign Out", session_path(current_user), method: :delete, class: "headerbutton" %>
+			<%= link_to "Sign Out", session_path(current_user), method: :delete, class: "headerbutton"  %>
 			<a class="headerbutton" href="/users/<%= current_user.id %>">Home</a>
 		<% end %>
+	</header>
 
-</header>
 	<div class="content">
-	<%= yield %>
+			<%= yield %>
 	</div>
 
-	<footer>Created by Hershel Nashman</footer>
+	<div class="footer">
+		<footer>Created by Hershel Nashman</footer>
+	</div>
 </body>
 </html>
